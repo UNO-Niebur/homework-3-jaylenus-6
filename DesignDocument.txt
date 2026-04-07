@@ -1,0 +1,25 @@
+Board Game Design Document
+
+Game Idea:
+This is a simple board game with 30 spaces
+There are three players and a few event spaces on the board
+
+How the Game Works:
+The game reads the current turn, player positions, and event spaces from events.txt
+The board is displayed in text form from space 1 to space 30
+The current player can move forward by entering a number of spaces
+If the player lands on an event space, the program displays that event
+After the move, the turn changes to the next player
+The updated turn and player positions are saved back into the file
+
+How Data is Stored:
+Turn is stored as Turn: Player1
+Players are stored as space: player name
+Events are stored as space: event name
+
+Functions Used:
+loadGameData(filename) reads the file and separates turn, players, and events
+displayGame(turn, players, events, board_size) displays the board
+movePlayer(turn, players, events, board_size) moves the current player
+saveGameData(filename, turn, players, events) saves updated game data
+main() runs the program
